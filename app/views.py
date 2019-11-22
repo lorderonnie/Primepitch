@@ -6,6 +6,17 @@ from . import Main
 def index():
 
     '''
-    View root page function that returns the index page and its data
+    A function that returns the index page and its data
     '''
-    return render_template('index.html')
+    message = 'PRIMEPITCH'
+    return render_template('index.html',message= message)
+                           
+@app.route('/pitch/<int:pitch_id>')
+def pitch(pitch_id):
+
+    '''
+    This function  returns the movie details page and its data
+    '''
+    return render_template('pitch.html',id = pitch_id)                           
+                           
+                           
