@@ -2,7 +2,7 @@ class Config:
     '''
     This is the general configuration parent class
     '''
-    pass
+   
 
 
 
@@ -19,3 +19,8 @@ class DevConfig(Config):
     '''
 
     DEBUG = True
+    
+config_options = {
+'development':DevConfig,
+'production':ProdConfig
+}
