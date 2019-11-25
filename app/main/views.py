@@ -3,7 +3,7 @@ from . import main
 from flask_login import login_required
 from ..models import User
 from .forms import UpdateProfile
-from sqlalchemy.testing.config import db,photos
+from .. import db,photos
 
 @main.route('/')
 def index():
