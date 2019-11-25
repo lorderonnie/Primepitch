@@ -1,9 +1,10 @@
+import os
 class Config:
     '''
     This is the general configuration parent class
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://ronald:1645@localhost/watchlist' 
-
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://ronald:1645@localhost/primepitch' 
+    SECRET_KEY = 'lorderonnie'
 
 
 class ProdConfig(Config):

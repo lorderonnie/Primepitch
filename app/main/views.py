@@ -9,10 +9,8 @@ def index():
     '''
     This function  returns the index page and its data
     '''
-    message = 'PRIMEPITCH'
-    return render_template('index.html',message= message)
+    title = 'PRIMEPITCH the best pitching site in the country!!!'
+    return render_template('index.html',title= title)
  
-@main.route('/pitch/review/new/<int:id>', methods = ['GET','POST'])
-@login_required
-def new_review(id):                          
+                          
        

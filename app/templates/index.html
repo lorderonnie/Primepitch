@@ -1,28 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title>PRIMEPITCH</title>
-        {% endif %}
-        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Courgette|Kaushan+Script&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
-        <link href="https://www.color-hex.com/" rel="colorscheme">
+{% extends 'base.html' %}
 
-    </head>
+{% block content %}
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Courgette|Kaushan+Script&display=swap" rel="stylesheet">
+    <h1 id="in"> PRIMEPITCH </h1>
+    <style>
+            h1{
+                text-align: center;
+                color:#16174b;
+                font-size: 70px;
+                font-family: 'Courgette', cursive;
+            }
     
-    <body id="boss">
-
-
-            <h1> PRIMEPITCH </h1>
-
+    </style>
+{% endblock%}
 
 
 
 
 
 
-    </body>
-</html>
+
+
+   
