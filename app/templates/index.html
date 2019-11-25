@@ -2,6 +2,7 @@
 
 {% block content %}
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Courgette|Kaushan+Script|Marck+Script&display=swap" rel="stylesheet">
+     
 <body>
     <h1 id="in"> PRIMEPITCH </h1>
     <h5>"Go confidently in the direction of your dreams! Live the life you’ve imagined;  Henry David Thoreau."</h5><br><br>
@@ -34,9 +35,40 @@
             background-repeat:no-repeat;
 
         }
-    
-
+        h2{
+            color:silver;
+            font-size:40px;
+            font-family: 'Courgette', cursive;
+            text-align:center;
+        }
+        
+        a{
+            color:red;
+            width:100px;
+            height:40px;
+        }
 </style>
+<div class="container">
+    <h2>Categories....</h2><br><br>
+    <div class="row">
+        <div class="col-md-3">
+                <a class="btn btn-success" type="button" href="/" >Games</a>
+
+        </div>
+        <div class="col-md-3">
+                <a class="btn btn-success" type="button" href="/" >Business</a>
+
+        </div>
+        <div class="col-md-3">
+                <a class="btn btn-success" type="button" href="/" >Music</a>
+
+        </div>
+        <div class="col-md-3">
+                <a class="btn btn-success" type="button" href="/" >Tech</a>
+
+        </div>
+    </div>
+</div>
 </body>
 {% endblock%}
 
