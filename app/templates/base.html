@@ -14,12 +14,16 @@
 
     </head>
     <body>
-        {% block navbar %}
-            {% include 'navbar.html' %}
-        {% endblock %} 
-      
-        {% block content %}  
-
+       {% block content %}  
+            {% block navbar %}
+                {% include 'navbar.html' %}
+            {% endblock %} 
+        {% block styles %}
+            {{super()}}
+            {{ simplemde.css}}
+            {{ simplemde.js }}
+        {% endblock %}
+        
         {% endblock%}
     </body>
 </html>

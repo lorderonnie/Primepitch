@@ -5,7 +5,7 @@ class Config:
     '''
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://ronald:1645@localhost/primepitch' 
     SECRET_KEY = 'lorderonnie'
-
+    UPLOADED_PHOTOS_DEST ='app/static/photos'
 
 class ProdConfig(Config):
     '''
