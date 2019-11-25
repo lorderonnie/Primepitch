@@ -1,0 +1,10 @@
+Hello {{user.username}}
+
+Welcome to PRIMEPITCH ;The best pitch app in the world!!
+
+Thank  you for creating an account in our application.Any dettails concerned with app shall be found in the application.
+Please enjoy our services and recommend it to a friend
+ 
+THANKS HONEY BUNCHES!!!!!
+
+
