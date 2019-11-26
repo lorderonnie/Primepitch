@@ -8,16 +8,16 @@
 <div class="row">
 
   <div class="col-md-4" style="color:silver;font-family: 'Courgette', cursive">
-    <h3 style="font-size:50px;" > {{user.username| capitalize}} 🤑</h3>
+    <h3 style="font-size:50px;" >Username: {{user.username| capitalize}} 🤑</h3><br><br>
 
    
     {% if user.bio %}
-      <p style="font-size:32px;"> {{user.bio}}</p>
+      <p style="font-size:30px;">Bio :" {{user.bio}} "</p>
     {% else%}
       <p style="font-size:32px;" > {{user.username| capitalize}} has no bio </p>
     {% endif %}
-  </div>
-
+  </div><br><br>
+<div class="col-md-4"></div>
 
   <div class="col-md-4">
     {% if user.profile_pic_path %}
@@ -39,7 +39,20 @@
   </div>
 
 </div>
-
 </div>
+
+<p> your pitch</p>
+<div class = "row">
+  {% for pit in pitch%}
+  <div class="col-md-4">
+    <div class="card">
+      <p>{{pit.title}}</p>
+      <p>{{pit.body}}</p>
+    </div>
+
+  </div>
+  {% endfor%}
+</div>
+
 </body>
 {% endblock %}

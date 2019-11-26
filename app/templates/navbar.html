@@ -8,13 +8,15 @@
             <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/" style="font-family: 'Bree Serif', serif;">PRIMEPITCH</a>
-        </div>
+        </div><br>
         <div  class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/">Home</a></li>
+                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_authenticated %}
+                    <li><a href = "/user/{{current_user.username}}">add pitch</a></li>
                     <li><a href="{{url_for('main.update_profile',uname=current_user.username)}}">My profile</a></li>
                     <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
                     {% else %}
