@@ -16,7 +16,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_authenticated %}
-                    <li><a href = "/user/{{current_user.username}}">add pitch</a></li>
+                    <li><a href = "/pitch/new/{{current_user.username}}">add pitch</a></li>
                     <li><a href="{{url_for('main.update_profile',uname=current_user.username)}}">My profile</a></li>
                     <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
                     {% else %}

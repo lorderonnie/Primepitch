@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+        body{
+            background-image:url(https://stmed.net/sites/default/files/sci-fi-wallpapers-30855-4429710.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        p{
+            color:silver;
+            font-size:30px;
+            font-family: 'Marck Script', cursive;
+            text-align:center;
+        }
+        #fall{
+            color:silver;
+            font-size:60px;
+            text-align:center;
+            font-family: 'Courgette', cursive;
+        }
+</style>
+    <h1 id="fall">Pitches...</h1><br><br>
+    {% for pitch in pitches %}
+    <body>
+    <p>your pitch:{{pitch.body}}</p>
+    
+    </body>
+    {% endfor %}
+{% endblock content %}

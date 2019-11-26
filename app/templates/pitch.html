@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block content%}
+    <div class = "row">
+        <div class="card">
+            <p style="color:silver;">{{pitch.title}}<p>
+            <p style="color:silver;">{{pitch.body}}
+        </div>
+        
+    </div>
+    <button><a href="/pitch/comment/new/{{pitch.id}}">add comment</a></button>
+
+    <div class="row">
+        {% for cmnt in comment%}
+            <p style="color:silver;">{{cmnt.comment}}</p>
+            <p style="color:silver;">posted by::{{cmnt.user}} on :: {{cmnt.posted}}
+        {% endfor%}
+    </div>
+{% endblock%}

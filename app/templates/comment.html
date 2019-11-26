@@ -1,0 +1,23 @@
+{% extends ' base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{% block content%}
+<style>
+    p{
+        color:silver;
+        font-size:30px;
+
+    }
+    body{
+        background-image:url(https://stmed.net/sites/default/files/sci-fi-wallpapers-30855-4429710.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+</style>
+<body>
+    <div class="container">
+        <p>write your comment</p>
+        {{wtf.quick_form(comment_form)}}
+    </div>
+</body>
+{% endblock%}
